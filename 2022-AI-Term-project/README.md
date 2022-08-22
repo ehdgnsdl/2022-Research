@@ -2,11 +2,11 @@
  2022-AI-Term-project
 
 ## Subject
-SuperResolution을 적용한 자동차 번호판 추정 향상
+* SuperResolution을 적용한 자동차 번호판 추정 향상
 
 ## Overview
-Object detection에서 SuperResolution의 필요성 <br>
-자동차의 번호판은 차량을 식별할 수 있는 중요 정보를 담고 있다. 블랙박스 카메라의 화질
+* Object detection에서 SuperResolution의 필요성 <br>
+* 자동차의 번호판은 차량을 식별할 수 있는 중요 정보를 담고 있다. 블랙박스 카메라의 화질
 이나 기상 상황, 도로 상황 등에 따라서 Object detection이 안되거나 잘못된 위치를 찾는 일이
 발생한다. Super Resolution을 통해서 Pre-processing 이후, Object Detection을 진행 시 더 높은
 인식률과 정확도를 기대해볼 수 있다. <br>
@@ -24,7 +24,7 @@ Object detection에서 SuperResolution의 필요성 <br>
 - VGG16 Model
 
 #### Summary
-- Blur처리된 이미지, 기본 이미지, SuperResolution(BSRGAN)을 적용한 이미지 순서대로 성능이 좋은 것을 확인.
+- Blur처리된 이미지, 기본 이미지, SuperResolution(BSRGAN)을 적용한 이미지 순서대로 성능이 점차 좋아지는 것을 확인.
 - 가중치 초기화 및 Batch Size, Epoch, EarlyStopping 등의 기법과 하이퍼파라미터을 수정했을 때 성능 향상을 확인.
 
 #### A case of trying but bad results
