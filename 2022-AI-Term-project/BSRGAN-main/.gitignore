@@ -1,7 +1,0 @@
-__pycache__
-.DS_Store
-testsets/*_results_*/*
-model_zoo/*
-*.log
-testsets/*
-result.png
