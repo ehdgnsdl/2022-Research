@@ -28,3 +28,6 @@
 - T-test / Chi^2 test
 - Recommendation system
 - App Visualization
+
+## Code & ppt & prize
+https://steadfast-shaker-35b.notion.site/_Lifelog-project-89c4d7a5d24b4c6492e476a2483b6d71
