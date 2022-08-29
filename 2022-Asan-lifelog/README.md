@@ -28,7 +28,3 @@
 - T-test / Chi^2 test
 - Recommendation system
 - App Visualization
-
-🏆Prize
-
-![2022_서울아산_prize.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f4ec5a5c-ad55-4911-8fea-79626ca9bb15/2022_%EC%84%9C%EC%9A%B8%EC%95%84%EC%82%B0_prize.jpg)
