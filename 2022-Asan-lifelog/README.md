@@ -1,35 +1,34 @@
-# 2022-AI-Term-project
- 2022-AI-Term-project
+# 2022-Asan-lifelog
+* 제 7기 의료정보 분석 전문가 심화과정 (Life-log data Analysis)
 
 ## Subject
-* SuperResolution을 적용한 자동차 번호판 추정 향상
+* 사용자의 특성을 확인하고 Machine Learning 기법을 활용하여 사용자를 Profiling 하는 것
+* 동일 프로파일 내의 다빈도 메뉴를 파악하여 신규 및 고령자에게 추천하는 것
 
-## Overview
-* Object detection에서 SuperResolution의 필요성 <br>
-* 자동차의 번호판은 차량을 식별할 수 있는 중요 정보를 담고 있다. 블랙박스 카메라의 화질
-이나 기상 상황, 도로 상황 등에 따라서 Object detection이 안되거나 잘못된 위치를 찾는 일이
-발생한다. Super Resolution을 통해서 Pre-processing 이후, Object Detection을 진행 시 더 높은
-인식률과 정확도를 기대해볼 수 있다. <br>
+## Data
+* 서울아산병원 어플리케이션 '내 손안의 차트' 데이터
 
-## Try
-- Blur처리된 이미지와 기본 이미지, SuperResolution을 적용한 이미지 각각에 자동차 번호판을 Object Detection 했을 때의 Loss 값과 Accuracy 값을 비교.<br>
-- 또한, 하이퍼파라미터 수정 및 가중치 초기화, Dropout 같은 여러가지 기법을 사용하여 성능 비교. <br>
+## Introduction
+* 건강 관리를 위한 Life-log data 활용의 관심 증가
+* 서울아산병원 '내손안의 차트(MCMH)' 앱 개발
 
-## Experiments and results
-#### Base Code 
-- 데이터: Kaggle ‘Car License Plate Detection’
-- VGG16을 이용한 자동차 번호판 Detection
+## Necessity
+* Life-log data의 융용성에도 불구하고 지속이용률은 낮은 편
+* 노년층 환자들의 비교적 낮은 사용률
 
-#### Model
-- VGG16 Model
+## Goal
+* Machine Learning(ML)을 적용하여 '내 손안의 차트'의 사용패터 기반 Profiling을 한다.
+* 사용자들의 어플 이용 패턴을 파악하고 이를 기반으로 신규사용자에게 적절한 메뉴를 추천한다.
+* 고령 이용자를 포함한 전연령대가 이용하기 편리한 customized UI를 제안한다.
 
-#### Summary
-- Blur처리된 이미지, 기본 이미지, SuperResolution(BSRGAN)을 적용한 이미지 순서대로 성능이 점차 좋아지는 것을 확인.
-- 가중치 초기화 및 Batch Size, Epoch, EarlyStopping 등의 기법과 하이퍼파라미터을 수정했을 때 성능 향상을 확인.
+## Method
+- Collaborative Filtering (Embedding layer)
+- Kmeans cluster
+- PCA
+- T-test / Chi^2 test
+- Recommendation system
+- App Visualization
 
-#### A case of trying but bad results
-1. Optimizer 수정 (RMSProp, RAdam, NAdam, SGD 등)
-2. Loss Function 수정
-3. Dropout, Batch Normalized 기법 적용
-4. 모델 수정 (Layer 층 추가, activation function 수정 등)
+🏆Prize
 
+![2022_서울아산_prize.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f4ec5a5c-ad55-4911-8fea-79626ca9bb15/2022_%EC%84%9C%EC%9A%B8%EC%95%84%EC%82%B0_prize.jpg)
